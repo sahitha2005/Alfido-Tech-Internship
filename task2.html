@@ -2,56 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Bootstrap Navbar</title>
+  <title>My Single Page Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ✅ Bootstrap 5 CSS -->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    section {
+      padding: 100px 0;
+    }
+  </style>
 </head>
 <body>
 
-<!-- ✅ Responsive Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <!-- Brand Name -->
-    <a class="navbar-brand" href="#">MyWebsite</a>
 
-    <!-- Hamburger Button -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Profile</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible Links -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto"> <!-- ms-auto pushes links to the right -->
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#technical skills">Tehnical Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Dummy sections to scroll to -->
-<div id="home" class="p-5 bg-light text-center"><h2>Home Section</h2></div>
-<div id="about" class="p-5 bg-secondary text-white text-center"><h2>About Section</h2></div>
-<div id="skills" class="p-5 bg-light text-center"><h2>Skills Section</h2></div>
-<div id="projects" class="p-5 bg-secondary text-white text-center"><h2>Projects Section</h2></div>
-<div id="contact" class="p-5 bg-light text-center"><h2>Contact Section</h2></div>
 
-<!-- ✅ Bootstrap JS Bundle -->
+<section id="home" class="bg-light text-center">
+  <div class="container">
+    <h2>Welcome to My Profile</h2><br>
+    <p>Hi, I'm Sahitha — a passionate MCA student.<br>
+      Welcome to my personal space , where I share my projects, skills, and learning journey in the world of technology!
+      I am glad to share my profile,skills,knowledge with you.Hope my profile will show you some interested things.!!!<br><br>
+        </p>
+  </div>
+</section>
+
+
+<section id="about" class="bg-secondary text-white text-center">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I'm enthusiastic about learning new technologies, building web applications, and improving my coding skills.
+Here you'll find more about my academic journey, the projects I've worked on, and the skills I'm developing to grow as a software developer.</p>
+  </div>
+</section>
+
+<section id="education" class="bg-light text-center">
+  <div class="container">
+    <h2>Education</h2>
+    <p><b>--></b>Pursuing Master of Computer Applications (MCA) at Adhiyamaan College of Engineering, Hosur (2024–Present)<br>
+      <b>--></b>Completed Bachelor of Computer Applications (BCA) at M.G.R College, Hosur in 2024 with 85%<br>
+      <b>--></b>Passed HSC (Computer Science) from Govt. High School, Bukkasagaram in 2021 with 82.1%<br>
+      <b>--></b>Completed SSLC from Government High School, Muthali in 2019 with 73.4%</p>
+  </div>
+</section>
+<section id="technical skills" class="bg-secondary text-white text-center">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    
+        <p>HTML<br>
+        CSS<br>
+        JavaScript<br>
+        SQL</p>
+      
+  </div>
+</section>
+<section id="projects" class="bg-light text-center">
+  <div class="container">
+    <h2>My Projects</h2>
+    <h4>1.Student Management System</h4>
+    <p>Developed a web-based Student Details Management System using Node.js and MongoDB for storing and managing student information. The application allows users to add, view, update, and delete student records. Used HTML and CSS for the front-end interface without using external frameworks like Express.js. Focused on performing basic CRUD operations and integrating MongoDB for persistent data storage.</p><br>
+    <h4>2.Simple Html Page</h4>
+    <p>This is a personal profile webpage created using HTML and CSS. It displays my basic details, education background, technical and soft skills. The layout is neatly divided into two sections using Flexbox. It also includes information about my project and certificates. The design is clean and easy to read. </p>
+  </div>
+</section>
+
+<section id="contact" class="bg-secondary text-white text-center">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: sahitha.mca2024@adhiyamaan.in<br>Phone: +91 6379939025</p><br>
+    <strong>THANK YOU</strong>
+  </div>
+</section>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
