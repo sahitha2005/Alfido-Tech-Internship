@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Change</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box1 {
+      height: 100vh;
+      width: 100%;
+    }
+
+    .box2, .box3, .box4 {
+      width: 100%;
+      height: 33.3%;
+      border-bottom: 3px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box2 {
+      background-color: lightblue;
+    }
+
+    .box3 {
+      background-color: lightpink;
+    }
+
+    .box4 {
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box1">
+    <div class="box2" id="box2">
+      <button onclick="changeColor('box2')">CLICK HERE</button>
+    </div>
+    <div class="box3" id="box3">
+      <button onclick="changeColor('box3')">CLICK HERE</button>
+    </div>
+    <div class="box4" id="box4">
+      <button onclick="changeColor('box4')">CLICK HERE</button>
+    </div>
+  </div>
+
+  <script>
+    function changeColor(boxId) {
+      var box = document.getElementById(boxId);
+
+      if (boxId === 'box2') {
+        box.style.backgroundColor = 'gray';
+      } else if (boxId === 'box3') {
+        box.style.backgroundColor = 'violet';
+      } else if (boxId === 'box4') {
+        box.style.backgroundColor = 'purple';
+      }
+    }
+  </script>
+
+</body>
+</html>
